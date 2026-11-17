@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll-Based Frame Animation</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional smooth-scrolling library (Lenis) for buttery mousewheel feel -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- Loading Screen Overlay -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-bar-bg">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+      <div id="loader-text" class="loader-text">0%</div>
+    </div>
+  </div>
+
+  <!-- Subtle Scroll Indicator -->
+  <div id="scroll-hint" class="scroll-hint">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow"></div>
+  </div>
+
+  <!-- Fixed Canvas Viewport -->
+  <div class="canvas-container">
+    <canvas id="animation-canvas"></canvas>
+  </div>
+
+  <!-- Scroll Track (controls total scroll length) -->
+  <div class="scroll-track"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
