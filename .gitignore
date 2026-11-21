@@ -1,0 +1,24 @@
+# Temporary browser inspection file
+Attached Element Context from Integrated.txt
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
